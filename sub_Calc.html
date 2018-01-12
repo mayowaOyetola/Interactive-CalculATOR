@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8" />
+	<title>calculator</title>
+<script type="text/JavaScript">
+		var a,b;
+		function getValue(){
+			a=Number(document.getElementById("a").value);
+			b=Number(document.getElementById("b").value);
+		}
+		function sum(){
+			getValue();
+			value=a+b;
+			alert("The sum is"+value);	
+		}
+			function minus(){
+			getValue();
+			value=a-b;
+			alert("The sub is"+value);	
+		}
+			function div(){
+			getValue();
+			value=a/b;
+			alert("The division is"+value);	
+		}
+			function multi(){
+			getValue();
+			value=a*b;
+			alert("The multiplication is"+value);	
+		}
+</script>
+</head>
+<body>
+<div>
+	<form name="calculator">
+	<input id="a" type="text"  />
+	<input id="b" type="text" />
+	<input type="submit" value="sum" onclick="sum()"/>
+	<input type="submit" value="minus" onclick="minus()"/>
+	<input type="submit" value="divide" onclick="div()"/>
+	<input type="submit" value="multiply" onclick="multi()"/>
+	</form>
+</div>
+
+</body>
+</html>
